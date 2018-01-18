@@ -1,7 +1,7 @@
 {
   "name": "angular-pretty-size",
   "homepage": "https://github.com/l10178/angular-pretty-size",
-  "description": "Angular 2+ library that converts bytes to a human readable string.",
+  "description": "Do NOT use,not tested.... Angular 2+ library that converts bytes to a human readable string.",
   "version": "0.0.1",
   "license": "MIT",
   "keywords": [
