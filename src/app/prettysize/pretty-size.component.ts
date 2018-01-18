@@ -16,7 +16,7 @@ export class PrettySizeComponent {
   @Input()
   set nxtPrettySize(value: number) {
     //how to deal with zero 0
-    this.size = this.size | value;
+    this.size = this.size || value;
   }
 
   @HostBinding()

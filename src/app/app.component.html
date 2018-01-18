@@ -17,5 +17,10 @@
     <span [nxtPrettySize]="testSize"></span>
   </li>
 
+  <li *ngFor="let testSize  of testBytes2 ">
+    pipe size is {{testSize|nxtPrettySize}}
+    <!--<span [nxtPrettySize]="testSize"></span>-->
+  </li>
+
 </ul>
 
