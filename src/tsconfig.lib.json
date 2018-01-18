@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "declaration": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": [
+      "es2016",
+      "dom"
+    ],
+    "outDir": "../dist/lib",
+    "target": "es5",
+    "module": "commonjs",
+    "baseUrl": "",
+    "typeRoots": [
+      "../node_modules/@types"
+    ]
+  },
+  "include": [
+    "./app/prettysize/*"
+  ],
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+}
+
