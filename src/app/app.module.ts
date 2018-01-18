@@ -11,15 +11,14 @@ import {PrettySizeModule} from './prettysize/pretty-size.module';
   ],
   imports: [
     BrowserModule,
-    PrettySizeModule
-    // PrettySizeModule.forRoot({
-    //   provide: PrettySizeOptions,
-    //   useValue: {
-    //     units: [' B', ' KB', ' MB', ' GB', ' TB', ' PB', ' EB', ' ZB', ' YB'],
-    //     divisor: 1000,
-    //     scale: 1,
-    //   },
-    // })
+    PrettySizeModule.forRoot({
+      provide: PrettySizeOptions,
+      useValue: {
+        units: [' B', ' KB', ' MB', ' GB', ' TB', ' PB', ' EB', ' ZB', ' YB'],
+        divisor: 1000,
+        scale: 1,
+      },
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
