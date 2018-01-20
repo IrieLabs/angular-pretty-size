@@ -31,9 +31,9 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "publish:lib": "yarn run clean:dist && yarn run transpile",
+    "release": "yarn run clean:dist && yarn run build:dist",
     "clean:dist": "rimraf dist",
-    "transpile": "tsc -p src/tsconfig.lib.json",
+    "build:dist": "ngc -p src/tsconfig.lib.json",
     "e2e": "ng e2e"
   },
   "private": false,
