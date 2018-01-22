@@ -3,23 +3,27 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <!--<img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">-->
 </div>
 <h2>Here are some examples: </h2>
+<h3>Default options: </h3>
+<pre>
+  units: string[] = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+  divisor: number = 1000;
+  scale: number = 1;
+</pre>
 <ul>
-  <li *ngFor="let testSize of testBytes">
-    {{testSize}} to
+  <li *ngFor="let testSize of smallBytes">
+    {{testSize}} &rarr;
     <nxt-pretty-size [size]="testSize"></nxt-pretty-size>
   </li>
 
-  <li *ngFor="let testSize of testBytes2">
-    {{testSize}} to
+  <li *ngFor="let testSize of largeBytes">
+    {{testSize}} &rarr;
     <span [nxtPrettySize]="testSize"></span>
   </li>
 
-  <li *ngFor="let testSize  of testBytes2 ">
-    pipe size is {{testSize|nxtPrettySize}}
-    <!--<span [nxtPrettySize]="testSize"></span>-->
+  <li *ngFor="let testSize  of hugeBytes ">
+    {{testSize}} &rarr; {{testSize|nxtPrettySize}}
   </li>
 
 </ul>

@@ -7,6 +7,7 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-pretty-size';
-  testBytes = [10,10240,10178];
-  testBytes2 = [722468864, 89238283];
+  smallBytes = [10, 500, 1000, 1024, 1189];
+  largeBytes = [100000, 102400, 622468864, 792382830, 892382830];
+  hugeBytes = [1000000000, 1024000000, 7224688640, 8923828300, 18923828300000];
 }
