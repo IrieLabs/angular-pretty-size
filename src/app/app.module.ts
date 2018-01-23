@@ -15,7 +15,8 @@ import {PrettySizeModule} from './prettysize/pretty-size.module';
       provide: PrettySizeOptions,
       useValue: {
         units: [' B', ' KB', ' MB', ' GB', ' TB', ' PB', ' EB', ' ZB', ' YB'],
-        scale: 200,
+        divisor: 1000,
+        scale: 1,
       },
     })
   ],
