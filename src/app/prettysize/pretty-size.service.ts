@@ -1,20 +1,29 @@
 import {Injectable} from '@angular/core';
 import {PrettySizeOptions} from './pretty-size-options';
 
+
 @Injectable()
 export class PrettySizeService {
+
 
   constructor(private options: PrettySizeOptions) {
   }
 
   pretty(size: number): string {
+
+    const DEFAULT_UNITS = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+    const DEFAULT_DIVISOR = 1000;
+    const DEFAULT_SCALE = 1;
+
     size = size || 0;
 
-    let units = this.options.units || ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
-    let divisor = this.options.divisor || 1000;
+    let units = this.options.units || DEFAULT_UNITS;
+    let divisor = this.options.divisor || DEFAULT_DIVISOR;
     let scale = this.options.scale;
+    //scale is [0,20]
     if (scale == null || scale < 0 || scale > 20) {
-      scale = 1;
+      //no error message
+      scale = DEFAULT_SCALE;
     }
 
     let negative = size < 0;
