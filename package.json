@@ -2,8 +2,19 @@
   "name": "angular-pretty-size",
   "homepage": "https://github.com/l10178/angular-pretty-size",
   "description": "Angular library that converts bytes to a human readable string.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
+  "author": {
+    "name": "nxest",
+    "email": "l10178@163.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/l10178/angular-pretty-size.git"
+  },
+  "bugs": {
+    "url": "https://github.com/l10178/angular-pretty-size/issues"
+  },
   "keywords": [
     "angular",
     "angular2",

@@ -10,9 +10,12 @@ export class PrettySizeService {
   pretty(size: number): string {
     size = size || 0;
 
-    let units = this.options.units;
-    let divisor = this.options.divisor;
+    let units = this.options.units || ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+    let divisor = this.options.divisor || 1000;
     let scale = this.options.scale;
+    if (scale == null || scale < 0 || scale > 20) {
+      scale = 1;
+    }
 
     let negative = size < 0;
 
