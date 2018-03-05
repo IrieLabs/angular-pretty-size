@@ -48,10 +48,10 @@ Use service in your component.
 import {PrettySizeService} from 'angular-pretty-size';
 
 export class TestComponent {
-    testData: string;
+    displaySize: string;
 
     constructor(private prettySizeService: PrettySizeService) {
-      this.testData = this.prettySizeService.pretty(10178);
+      this.displaySize = this.prettySizeService.pretty(10178);
     }
 }
 ```
@@ -66,9 +66,9 @@ PrettySizeOptions default options is.
 
 ```typescript
 export class PrettySizeOptions {
-  units: string[] = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
-  divisor: number = 1000;
-  scale: number = 1;
+  units: string[] = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']; //all units,length is 9
+  divisor: number = 1000; //1000 or 1024
+  scale: number = 1; //NumberObject.toFixed(scale)
 }
 ```
 
@@ -95,4 +95,4 @@ import {PrettySizeModule, PrettySizeOptions} from 'angular-pretty-size';
 ```
 
 ## License
-MIT.
+Licensed under [MIT](https://opensource.org/licenses/MIT).
