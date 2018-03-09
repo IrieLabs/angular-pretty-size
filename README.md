@@ -86,7 +86,7 @@ import {PrettySizeModule, PrettySizeOptions} from 'angular-pretty-size';
             useValue: {
                 units: [' Byte', ' KiB', ' MiB', ' GiB', ' TiB', ' PiB', ' EiB', ' ZiB', ' YiB'],
                 divisor: 1024,
-                scale: 1, //scale is [0,20]
+                scale: 1, // 0, 1 or 2
             },
         }),
     ]
