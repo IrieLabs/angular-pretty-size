@@ -44,7 +44,7 @@
     "lint": "ng lint",
     "release": "yarn run clean:dist && yarn run build:dist",
     "clean:dist": "rimraf dist",
-    "build:dist": "ngc -p src/tsconfig.lib.json",
+    "build:dist": "ngc -p src/tsconfig.dist.json",
     "e2e": "ng e2e"
   },
   "private": false,
