@@ -17,15 +17,13 @@
   },
   "keywords": [
     "angular",
-    "angular2",
     "typescript",
-    "ng2",
     "ngx",
     "angular-pretty-size",
     "pretty-size",
-    "data",
     "file",
-    "filesize",
+    "size",
+    "bytes",
     "human",
     "readable"
   ],
