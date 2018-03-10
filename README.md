@@ -95,4 +95,7 @@ import {PrettySizeModule, PrettySizeOptions} from 'angular-pretty-size';
 ```
 
 ## License
-Licensed under [MIT](https://opensource.org/licenses/MIT).
+Licensed under [MIT][]. Copyright (c) 2018 [l10178][]
+
+[MIT]: https://opensource.org/licenses/MIT
+[l10178]: http://nxest.com
