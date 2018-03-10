@@ -78,7 +78,7 @@
     "zone.js": "^0.8.19"
   },
   "peerDependencies": {
-    "@angular/common": "^2.4.0 || ^4.0.0 || ^5.0.0",
-    "@angular/core": "^2.4.0 || ^4.0.0 || ^5.0.0"
+    "@angular/common": ">=4.0.0",
+    "@angular/core": ">=4.0.0"
   }
 }
